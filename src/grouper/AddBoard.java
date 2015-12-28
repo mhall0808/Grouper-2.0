@@ -38,6 +38,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -74,6 +76,8 @@ public class AddBoard implements Initializable {
     private TableColumn dBoardScore;
     @FXML
     private TableColumn dBoardTopics;
+    @FXML
+    private Text xPane;
 
     private ArrayList<DiscussionBoard> discussionBoards;
 
@@ -156,7 +160,20 @@ public class AddBoard implements Initializable {
     @FXML
     public void exitBoard(ActionEvent event) {
         Alert alert = new Alert(AlertType.CONFIRMATION);
-        alert.initStyle(StageStyle.UNDECORATED);
+        alert.initStyle(StageStyle.TRANSPARENT);
+        alert.setTitle("Confirmation");
+        //alert.setHeaderText("Look, a Confirmation Dialog");
+        alert.setContentText("Are you sure you want to quit?");
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK) {
+            Platform.exit();
+        } else {
+        }
+    }
+    
+    public void xPaneQuit(MouseEvent me){
+                Alert alert = new Alert(AlertType.CONFIRMATION);
+        alert.initStyle(StageStyle.TRANSPARENT);
         alert.setTitle("Confirmation");
         //alert.setHeaderText("Look, a Confirmation Dialog");
         alert.setContentText("Are you sure you want to quit?");

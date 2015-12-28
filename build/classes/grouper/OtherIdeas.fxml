@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -48,6 +49,15 @@
                   </Menu>
               </menus>
             </MenuBar>
+            <Pane layoutX="741.0" onMouseClicked="#xPaneQuit" prefHeight="43.0" prefWidth="27.0">
+               <children>
+                  <Text id="xpane" fill="WHITE" layoutX="4.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="exitpanel" text="X" wrappingWidth="18.6953125" fx:id="xpane">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <TableView id="dBoardTable" fx:id="discussionList" layoutX="14.0" layoutY="124.0" prefHeight="431.0" prefWidth="435.0" styleClass="item-title">

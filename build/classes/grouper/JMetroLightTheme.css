@@ -15,6 +15,12 @@
     -fx-border-style: solid;
 }
 
+.exitpanel{
+    -fx-background-color: black;
+    -fx-border-style: solid;
+}
+
+
 .header{
     -fx-font-size: 42pt;
     -fx-font-family: "Calibri";

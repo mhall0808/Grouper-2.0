@@ -37,9 +37,9 @@ public class Grouper extends Application {
     public void start(Stage primaryStage) {
         
         
-        ControllerTest test = new ControllerTest();
+        //ControllerTest test = new ControllerTest();
         
-        test.runTest();
+        //test.runTest();
         
         
 

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Grouper.jar" size="22588" download="eager" />
+    <jar href="Grouper.jar" size="22790" download="eager" />
     <jar href="lib\selenium-java-2.48.2-srcs.jar" size="681097" download="eager" />
     <jar href="lib\selenium-java-2.48.2.jar" size="1877241" download="eager" />
   </resources>
